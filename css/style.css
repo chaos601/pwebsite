@@ -1,7 +1,7 @@
 /*设置页面缩放最小宽度*/
-html, body { min-width: 375px;background: #f8f6f4;}
-@media only screen and (min-width: 375px) {
-    html, body { min-width: 375px; }
+html, body { min-width: 350px;background: #f8f6f4;}
+@media only screen and (min-width: 350px) {
+    html, body { min-width: 350px; }
 }
 a {
 	color: #555;
@@ -10,7 +10,13 @@ a:hover {
 	color: #004d6c;
 	text-decoration: none;
 }
-.conimg img {
+.conimg>img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	object-fit: cover;
+}
+.conimg>p>img {
 	width: auto;
 	height: auto;
 	max-width: 100%;
@@ -124,8 +130,11 @@ a:hover {
 .word_size h1 {
 	font-size: calc(1rem + 1vw);
 }
+.word_size h4 {
+	font-size: calc(1rem + 1vw);
+}
 .word_size p {
-	font-size: calc(0.4rem + 0.6vw);
+	font-size: calc(0.6rem + 0.4vw);
 }
 .foot_size p {
 	font-size: calc(0.6rem + 0.4vw);
@@ -144,7 +153,7 @@ a:hover {
 
 }
 /*Extra large devices (large desktops, 1200px and up)*/ 
-@media (min-width: 1200px) {
+@media (min-width: 2000px) {
 	.word_size h1 { 
 		font-size: 300%; 
 	}
