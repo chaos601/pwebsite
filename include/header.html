@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>正道的光</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="{stl.siteUrl}/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="{stl.siteUrl}/css/style.css">
+
+	<script type="text/javascript" src="{stl.siteUrl}/js/jquery-3.5.1.js"></script>
+	<script type="text/javascript" src="{stl.siteUrl}/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="{stl.siteUrl}/js/bootstrap.bundle.min.js"></script>
+</head>
+<body style="padding-top: 59px;">
+<!-- 导航栏开始 -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: #000;">
+  <stl:a class="navbar-brand" channelIndex="首页" style="margin-bottom: 3px;">正道的光</stl:a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <stl:a class="nav-link" channelIndex="首页">首页&nbsp;|&nbsp;Home <span class="sr-only">(current)</span></stl:a>
+      </li>
+      <stl:channels groupChannel="主导航" topLevel="0">
+      <li class="nav-item">
+        <stl:a class="nav-link">{channel.title}</a>
+      </li>
+  	  </stl:channels>      
+    </ul>
+  </div>
+</nav>
+<!-- 导航栏结束 -->

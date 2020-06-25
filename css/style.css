@@ -1,0 +1,154 @@
+/*设置页面缩放最小宽度*/
+html, body { min-width: 375px;background: #f8f6f4;}
+@media only screen and (min-width: 375px) {
+    html, body { min-width: 375px; }
+}
+a {
+	color: #555;
+}
+a:hover {
+	color: #004d6c;
+	text-decoration: none;
+}
+.conimg img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	object-fit: cover;
+}
+
+/*头部导航栏样式*/
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #ff8726;
+}
+.navbar-dark .navbar-nav .nav-link {
+	color: #fff;
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+	color: #ff8726;
+}
+.navbar-nav li {
+	border-bottom: 3px solid #000;
+}
+.navbar-nav li:hover {
+	border-bottom: 3px solid #ff8726;
+}
+
+/*轮播图文字*/
+.carousel-caption {
+	color: #FFFFF0;
+	font-family: "Courier New","FangSong";
+}
+
+/*个人简介*/
+.myinfo a li {
+	background: #fff;
+	box-shadow:4px 4px 5px #999;
+	border-top: 5px solid #004d6c;
+	border-radius: 10px;
+}
+
+
+.beforend {
+	background: url(../images/mystudybg.jpg) no-repeat center;
+	color: #999;
+	background-size: cover;
+}
+.something:hover::before {
+	content: "\00BB";
+}
+.something:hover::after {
+	content: "\00AB";
+}
+
+.endofindex {
+	border-top: 5px solid #004d6c;
+	background: #fff;
+}
+
+/*栏目页*/
+.jumbotron {
+	background: url(../images/cha_jumbg.jpg) no-repeat center;
+	background-size: cover;
+	color: #C0C0C0;
+}
+@media (min-width: 576px) {
+  .jumbotron {
+    padding: 8rem 2rem;
+  }
+}
+.mylocspan:after {
+	content: "\0BB";
+}
+.mylocation {
+	height: 30px;
+	line-height: 30px;
+	color: #004d6c;
+	font-weight: bold;
+	border-bottom: 3px solid #ff8726;
+}
+
+
+.myline {
+	padding: 0px 20px;
+}
+.myline {
+	border-left: 5px solid #f8f6f4;
+}
+.myline:hover {
+	background: #fff;
+	border-left: 5px solid #ff8726;
+	box-shadow:4px 4px 5px #999; 
+}
+
+
+.con_box {
+	background: #fff;
+	border-top: 8px solid #004d6c;
+	box-shadow: 0 0 20px rgba(0,0,0,.4);
+}
+.map a li {
+	height: 60px;
+	line-height: 60px;
+	font-weight: bold;
+}
+.map a li:hover {
+	background: #000;
+	color: #ff8726;
+}
+
+/*字体响应式*/
+.word_size h1 {
+	font-size: calc(1rem + 1vw);
+}
+.word_size p {
+	font-size: calc(0.4rem + 0.6vw);
+}
+.foot_size p {
+	font-size: calc(0.6rem + 0.4vw);
+}
+/*Small devices (landscape phones, 576px and up)*/ 
+@media (min-width: 576px) and (max-width: 767px) {
+
+}
+/*Medium devices (tablets, 768px and up)*/ 
+@media (min-width: 768px) and (max-width: 991px) 
+{ 
+
+}
+/*Large devices (desktops, 992px and up)*/ 
+@media (min-width: 992px) and (max-width: 1199px) { 
+
+}
+/*Extra large devices (large desktops, 1200px and up)*/ 
+@media (min-width: 1200px) {
+	.word_size h1 { 
+		font-size: 300%; 
+	}
+	.word_size p { 
+		font-size: 150%; 
+	}
+}
